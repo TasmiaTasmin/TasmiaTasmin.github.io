@@ -1,0 +1,27 @@
+
+Web Design:
+
+HTML5, CSS, Bootstrap, Sass, JavaScript, ES6
+
+Frontend Framework: Angular, React
+
+Backend framework: .NET Framework, ⋅ NET Core, NodeJS, ExpressJS, Laravel, Jange, fast API, Spring, 
+Spring Bost
+
+FireBase, WebRTC, SignalR, Swagger, WebAPI
+
+Operating systerns: Windows, Linux
+
+Language: C, C++, C#, Matlab, Jython, Java, JavaScript, PHP, Prolog, Machine Language
+
+Tool: PSPice, Packet Tracer, Cisco.
+
+Hardware Tool: Ardiuno, sensor
+Version Control: Git, Gitlab, Bitbucket, GitHub.
+
+Project Management Tool: Agile, Jira, Stack Trello, ClickUp.
+
+Technology:
+
+Networking, wireless networking, image processing
+Database: Orcale, MSSQL, MySQL, PostgreSQL.

@@ -1,0 +1,152 @@
+/*
+*
+* =====================
+* GENERAL
+* =====================
+*
+*/
+[data-animate] {
+    visibility: hidden;
+}
+
+.animated {
+    visibility: visible;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+/* Color Palette Gossip Start*/
+
+.color-50{
+    color: #f2fbf8;
+}
+
+.color-100{
+    color: #d3f4ea;
+}
+
+.color-200{
+    color: #a6e9d6;
+}
+
+.color-300{
+    color: #72d6bd;
+}
+
+.color-400{
+    color: #53c1a9;
+}
+
+.color-500{
+    color: #2ca089;
+}
+
+.color-600{
+    color: #20816f;
+}
+
+.color-700{
+    color: #1e675a;
+}
+
+.color-800{
+    color: #1c534a;
+}
+
+.color-900{
+    color: #1b463f;
+}
+
+.color-950{
+    color: #0a2925;
+} 
+/* Color Palette Gossip End*/
+
+
+/* Background Color Palette Gossip Start*/
+
+.background-color-50{
+    background-color: #f2fbf8;
+}
+.background-color-100{
+    background-color: #d3f4ea;
+}
+.background-color-200{
+    background-color: #a6e9d6;
+}
+.background-color-300{
+    background-color: #72d6bd;
+}
+.background-color-400{
+    background-color: #53c1a9;
+}
+.background-color-500{
+    background-color: #2ca089;
+}
+.background-color-600{
+    background-color: #20816f;
+}
+.background-color-700{
+    background-color: #1e675a;
+}
+.background-color-800{
+    background-color: #1c534a;
+}
+.background-color-900{
+    background-color: #1b463f;
+}
+.background-color-950{
+    background-color: #0a2925;
+}
+/* Background Color Palette Gossip End*/
+
+.border-color-600{
+    border-color: #20816f;
+}
+  
+  section {
+    padding: 30px 0;
+    position: relative;
+  }
+  
+  .text-bold {
+    font-weight: 700;
+  }
+  
+  .text-small {
+    font-size: 0.9rem;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .text-300 {
+    font-weight: 300 !important;
+  }
+  
+  .text-400 {
+    font-weight: 400 !important;
+  }
+  
+  .text-500 {
+    font-weight: 500 !important;
+  }
+  
+
+  .dark-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  
+  .parallax {
+    background-size: cover !important;
+    -webkit-transition: all 0.1s !important;
+    transition: all 0.1s !important;
+  }

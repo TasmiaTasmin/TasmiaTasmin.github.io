@@ -1,0 +1,35 @@
+:root {
+    --primary-color-50: #f2fbf8;
+    --primary-color-100: #d3f4ea;
+    --primary-color-200: #a6e9d6;
+    --primary-color-300: #72d6bd;
+    --primary-color-400: #53c1a9;
+    --primary-color-500: #2ca089;
+    --primary-color-600: #20816f;
+    --primary-color-700: #1e675a;
+    --primary-color-800: #1c534a;
+    --primary-color-900: #1b463f;
+    --primary-color-950: #0a2925;
+    
+    --secondary-color: #2ecc71;
+
+    --border-solid: 1px solid #20816f;
+    --border-dashed: 1px dashed #20816f;
+
+    --border-radius: 8px;
+
+    --font-size-16: 16px;
+    --font-size-17: 17px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-28: 28px;
+    --font-size-30: 30px;
+    --font-size-32: 32px;
+    --font-size-36: 36px;
+
+    --padding: 10px;
+  }
+
+  .card-body {
+    padding: 0px;
+  }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recent Blogs</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.recent-blogs {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.recent-blogs h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.recent-blogs .highlight {
+  color: #2ecc71;
+}
+
+.recent-blogs p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.blog-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  max-width: 350px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  background: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.meta {
+  color: #999;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.show-more {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.show-more:hover {
+  background: #27ae60;
+}
+
+  </style>
+</head>
+<body>
+  <section class="recent-blogs">
+    <h2>Recent <span class="highlight">Blogs</span></h2>
+    <p>Discover my latest blog entries, sharing insights and stories on various topics.</p>
+    <div class="blog-list">
+      <!-- Blog 1 -->
+      <div class="blog-card">
+        <img src="virtualization.png" alt="Virtualization and Virtual Machines">
+        <div class="blog-content">
+          <h3>Virtualization and Virtual Machines</h3>
+          <p>Why virtualization is necessary</p>
+          <div class="tags">
+            <span>VMs</span>
+            <span>DevOps</span>
+            <span>SRE</span>
+          </div>
+          <div class="meta">
+            <span>📅 Saturday, March 04, 2023</span>
+            <span>👤 Sabbir Ahmed</span>
+          </div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <!-- Blog 2 -->
+      <div class="blog-card">
+        <img src="markdown.png" alt="Markdown Mystery Tour">
+        <div class="blog-content">
+          <h3>Markdown Mystery Tour</h3>
+          <p>We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!</p>
+          <div class="tags">
+            <span>Design</span>
+            <span>Branding</span>
+            <span>Dev</span>
+          </div>
+          <div class="meta">
+            <span>📅 Monday, March 02, 2020</span>
+            <span>👤 Mahfuz Alam</span>
+          </div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+    <button class="show-more">Show More</button>
+  </section>
+</body>
+</html>
+

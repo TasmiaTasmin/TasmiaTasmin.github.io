@@ -1,0 +1,49 @@
+.nav-icon {
+    background-color: #c5dce7;
+    border: 1px solid #dadce0;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+/* Technical Skill Start*/
+.nav-tabs {
+    flex-direction: column !important;
+}
+
+/* Equal width for all buttons */
+.nav-tabs .nav-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Set a consistent width */
+.nav-tabs .nav-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Same styling on hover and active */
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+    background-color: #d3f4ea; 
+    color: #0a2925; 
+    /* border: none; */
+    /* border-color: #dee2e6 #dee2e6 #fff;  */
+}
+
+.nav-tabs {
+    border-bottom: none;
+    border-left: 1px solid #72d6bd;
+}
+
+/* Technical Skill End*/
