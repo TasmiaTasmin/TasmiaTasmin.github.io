@@ -1,7 +1,6 @@
-
 .counter-area {
   position: relative;
-  transform: translateY(-50%);
+   transform: translateY(-50%); 
 }
 
 .counter-area-wrapper {
