@@ -6,11 +6,6 @@
 
   .count-image{
     width: 60px;
-    /* padding: 15px; */
-    /* margin: 10px; */
-    /* background-color: #d3f4ea; */
-    /* background-color: antiquewhite; */
-    /* border-radius: 50px; */
   }
 
   .feature-image{
@@ -18,12 +13,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 60%; */
-    /* margin: 0 auto; */
     position: relative;
     transform: translateY(-50%);    
     cursor: pointer;
-    /* background: transparent; */
   }
 
   .layout{
