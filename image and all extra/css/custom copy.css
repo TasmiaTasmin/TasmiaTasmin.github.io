@@ -1,0 +1,248 @@
+/* your styles go here */
+/* General Start*/
+  body {
+    font-family:'Roboto', sans-serif;
+  }
+  
+  .btn{
+    margin: 5px;
+  }
+
+  /* Color Palette Gossip Start*/
+
+  col-50{
+    color: #f2fbf8;
+  }
+  col-100{
+    color: #d3f4ea;
+  }
+  col-200{
+    color: #a6e9d6;
+  }
+  col-300{
+    color: #72d6bd;
+  }
+  col-400{
+    color: #53c1a9;
+  }
+  col-500{
+    color: #2ca089;
+  }
+  col-600{
+    color: #20816f;
+  }
+  col-700{
+    color: #1e675a;
+  }
+  col-800{
+    color: #1c534a;
+  }
+  col-900{
+    color: #1b463f;
+  }
+  col-950{
+    color: #0a2925;
+  } /* Color Palette Gossip End*/
+
+
+  /* Background Color Palette Gossip Start*/
+
+  bac-50{
+    background-color: #f2fbf8;
+  }
+  bac-100{
+    background-color: #d3f4ea;
+  }
+  bac-200{
+    background-color: #a6e9d6;
+  }
+  bac-300{
+    background-color: #72d6bd;
+  }
+  bac-400{
+    background-color: #53c1a9;
+  }
+  bac-500{
+    background-color: #2ca089;
+  }
+  bac-600{
+    background-color: #20816f;
+  }
+  bac-700{
+    background-color: #1e675a;
+  }
+  bac-800{
+    background-color: #1c534a;
+  }
+  bac-900{
+    background-color: #1b463f;
+  }
+  bac-950{
+    background-color: #0a2925;
+  }
+
+/* Background Color Palette Gossip End*/
+
+/* General End*/
+
+/* Top NavBar Start*/
+  .icon{
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link-dash{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-fluid {
+    padding-right: 0px; 
+    padding-left: 0px;
+  }
+  
+  .navbar {
+    padding-right: 0px; 
+    padding-left: 0px;
+  }
+  
+  #dashboard {
+    background: rgb(255, 254, 254);
+    border: 1px solid #007ED3;
+    width: 140px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000; 
+    background-color: lavender;
+  }
+  
+  #sign_up {
+    background: rgb(255, 254, 254);
+    border: 1px solid #007ED3;
+    width: 100px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000; 
+  }
+  
+  #sign_up > a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  li > a {
+    text-decoration: none;
+  }
+  
+  #log_in {
+    background: #007ED3;
+    border: 1px solid rgb(255, 252, 252);
+    width: 100px;
+    height: 40px;
+    color: #ffffff;
+    /* font-size: 0.8rem; */
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  #log_in > a {
+    color:rgb(255, 251, 251);
+    text-decoration: none;
+  }
+  
+  .navbar {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  .btn-outline-primary, .btn-primary {
+    border-radius: 20px;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .center-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar-collapse {
+    justify-content: end;
+  }
+  
+  .input-group-text {
+    background-color: white;
+    border-radius: 0 20px 20px 0; 
+    border: 1px solid #ced4da; 
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-expand-lg.navbar {
+        padding-top: 1.05rem;
+        padding-bottom: 1.05rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .center-nav {
+      position: static;
+      text-align: start;
+      margin-top: 10px;
+    }
+    .navbar-collapse {
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-inline {
+      margin-top: 10px;
+      width: 100%;
+    }
+    .form-inline input {
+      width: 100%;
+    }
+    .d-flex.ms-auto {
+      margin-top: 10px;
+    }
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler{
+    background-color: #9ed1f3;
+    border: 2px solid gray;
+    padding: 5px 5px 0px 5px;
+    border-radius: 8px;
+  }
+  
+  .navbar-toggler .navbar-toggler-icon{
+    color: rgb(61, 60, 60);
+  }
+
+/* Top NavBar End*/
+
+/* Technical Skill Start*/
+  .nav-tabs {
+    flex-direction: column !important;
+  }
+
+/* Technical Skill End*/

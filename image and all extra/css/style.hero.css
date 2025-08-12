@@ -1,0 +1,58 @@
+  .row{
+    padding: 0;
+  }
+  
+  .bacground {
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+    height: 90vh;
+   
+    background-image: linear-gradient(rgba(204, 235, 225, 0.25) .1em, transparent .1em), linear-gradient(90deg, rgba(208, 255, 242, 0.25) .1em, transparent .1em);
+    background-size: 30px 30px;
+  }
+  
+  @media (max-width: 767px) {
+    .hero-content h1,
+    h2 {
+      text-align: center;
+    }
+    .btn-list {
+      justify-content: center;
+    }
+  }
+  
+  .hero-image-style-2 svg {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 58px;
+    margin-bottom: 5px;
+  }
+  
+  .hero-content h1 {
+    line-height: 56px;
+  }
+  
+  .hero-content p {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .hero-content h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  
+  .hero-content p {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  
+  .hero-content-wrapper {
+    padding-top: 5px;
+    position: relative;
+  }
+  

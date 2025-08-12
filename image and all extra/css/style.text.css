@@ -1,0 +1,343 @@
+.counter-area {
+  position: relative;
+   transform: translateY(-50%); 
+}
+
+.counter-area-wrapper {
+  background: #fff;
+  box-shadow: 0 4px 24px #e7e9ec;
+  border-radius: 10px;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-counter {
+  align-items: end;
+  position: relative;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.counter-content {
+  margin-left: 20px;
+}
+
+.media-body {
+  flex: 1;
+}
+
+.top-nav-logo{
+
+}
+
+.top-nav-item{
+
+}
+
+.button-text{
+
+}
+
+/* .title-text{
+    font-family: "Poppins", sans-serif;
+    font-family: Arial, sans-serif;
+    font-family:'Roboto', sans-serif;
+    font-family: "Roboto Slab", serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    color: linear-gradient(92.25deg, #012A46 -5.93%, #007ED3 63.4%, #008AE8 98.25%);;
+} */
+
+.title span {
+  font-size: 2.5rem;
+}
+
+.title-hero-section{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  /* line-height: 1.2; */
+  line-height: 37px;
+  text-align: left;
+  background: linear-gradient(to right, #0a2925 0%, #20816f 40%, #53c1a9 80%);
+  /* background: linear-gradient(92.25deg, #0a2925 -5.93%, #2ca089 63.4%, #53c1a9 98.25%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: linear-gradient(92.25deg, #012A46 -5.93%, #007ED3 63.4%, #008AE8 98.25%) !important; */
+}
+
+.title-left{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    /* line-height: 1.2; */
+    line-height: 37px;
+    text-align: left;
+    background: linear-gradient(to right, #0a2925 0%, #20816f 20%, #53c1a9 40%);
+    /* background: linear-gradient(92.25deg, #0a2925 -5.93%, #20816f 63.4%, #53c1a9 98.25%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: linear-gradient(92.25deg, #012A46 -5.93%, #007ED3 63.4%, #008AE8 98.25%) !important; */
+}
+
+.title-middle{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  display: inline-block;
+  padding: 10px 0;
+  margin-bottom: 44px;
+  text-align: center;
+  border-bottom: solid 1px #20816f;
+  border-top: solid 1px #20816f;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  margin-top: 20px;
+  letter-spacing: 0;
+  background: linear-gradient(92.25deg, #0a2925 -5.93%, #20816f 63.4%, #53c1a9 98.25%);
+  /* background: linear-gradient(92.25deg, #012A46 -5.93%, #007ED3 63.4%, #008AE8 98.25%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: linear-gradient(92.25deg, #012A46 -5.93%, #007ED3 63.4%, #008AE8 98.25%) !important; */
+}
+
+.title {
+  display: inline-block;
+  font-size: 2.9rem;
+  font-weight: 100;
+  padding: 10px 0;
+  margin-bottom: 44px;
+  text-align: center;
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  color: #555;
+  margin-top: 20px;
+  letter-spacing: 0;
+}
+
+/* 
+.hero-content h1 {
+  font-style: normal;
+  font-size: 65px;
+  line-height: 82px;
+  background: linear-gradient(180deg, #11bfd8 0%, #3da8b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.sub-title-text{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: left;
+    color: #000000;
+}
+
+.sub-title-hero-section{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  color: #000000;
+}
+
+.paragraph-text{
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #0a2925;
+}
+
+.list-bullet-point{
+
+}
+
+.list-item-text{
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+  }
+  
+  a {
+    color: #4fbfa8;
+    text-decoration: none;
+  }
+  
+  a:hover, a:focus {
+    color: #348e7b;
+    text-decoration: underline;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    margin-bottom: 0.5rem;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: inherit;
+  }
+  
+  h1,
+  .h1 {
+    font-size: 58px;
+  }
+  
+  h2,
+  .h2 {
+    font-size: 34px;
+  }
+  
+  h3,
+  .h3 {
+    font-size: 28px;
+  }
+  
+  h4,
+  .h4 {
+    font-size: 24px;
+  }
+  
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+  
+  h6,
+  .h6 {
+    font-size: 16px;
+  }
+  
+  .lead {
+    font-size: 1.4375rem;
+    font-weight: 300;
+  }
+  
+  .display-1 {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  .display-2 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  .display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  .display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  small,
+  .small {
+    font-size: 80%;
+    font-weight: 400;
+  }
+  
+  mark,
+  .mark {
+    padding: 0.2em;
+    background-color: #fcf8e3;
+  }
+  
+  .text-primary {
+    color: #4fbfa8 !important;
+  }
+  
+  a.text-primary:hover, a.text-primary:focus {
+    color: #3aa18c !important;
+  }
+  
+  .text-secondary {
+    color: #6c757d !important;
+  }
+  
+  a.text-secondary:hover, a.text-secondary:focus {
+    color: #545b62 !important;
+  }
+  
+  .text-success {
+    color: #28a745 !important;
+  }
+  
+  a.text-success:hover, a.text-success:focus {
+    color: #1e7e34 !important;
+  }
+  
+  .text-info {
+    color: #17a2b8 !important;
+  }
+  
+  a.text-info:hover, a.text-info:focus {
+    color: #117a8b !important;
+  }
+  
+  .text-warning {
+    color: #ffc107 !important;
+  }
+  
+  a.text-warning:hover, a.text-warning:focus {
+    color: #d39e00 !important;
+  }
+  
+  .text-danger {
+    color: #dc3545 !important;
+  }
+  
+  a.text-danger:hover, a.text-danger:focus {
+    color: #bd2130 !important;
+  }
+  
+  .text-light {
+    color: #f8f9fa !important;
+  }
+  
+  a.text-light:hover, a.text-light:focus {
+    color: #dae0e5 !important;
+  }
+  
+  .text-dark {
+    color: #343a40 !important;
+  }
+  
+  a.text-dark:hover, a.text-dark:focus {
+    color: #1d2124 !important;
+  }
