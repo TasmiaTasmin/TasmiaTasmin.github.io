@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Sticky Nav + Dynamic About</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.hero.css">
   <style>
     .navbar-brand {
-      font-weight: bold;
+      font-weight: 700;
       letter-spacing: 2px;
       color: #4cc3a1 !important;
     }
@@ -15,56 +16,94 @@
       letter-spacing: 1px;
       cursor: pointer;
     }
+    .navbar .nav-link.active {
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
     .btn-try {
-      border: 1px solid black;
-      padding: 2px 8px;
+      border: 1px solid #000;
+      padding: 2px 10px;
       font-size: 14px;
     }
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
     section {
       padding: 100px 0;
-      min-height: 100vh;
+      min-height: 60vh;
+      /* ensure anchors aren't hidden behind the fixed navbar */
+      scroll-margin-top: 90px;
     }
-    body {
-      padding-top: 70px; /* Prevent content from hiding under fixed navbar */
-    }
+    /* ensure content doesn't sit under the fixed navbar */
+    body { padding-top: 80px; }
   </style>
 </head>
 <body>
 
-<!-- FIXED NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
+<!-- FIXED, MOBILE-RESPONSIVE NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">TASMIA TASMIN</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
+
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav align-items-lg-center">
         <li class="nav-item">
-          <a class="nav-link" id="about-link">ABOUT</a>
+          <a class="nav-link" id="about-link" href="#">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">SERVICES</a>
+          <a class="nav-link scroll-link" href="#services">SERVICES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#resume">RESUME</a>
+          <a class="nav-link scroll-link" href="#resume">RESUME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
+          <a class="nav-link scroll-link" href="#contact">CONTACT</a>
         </li>
         <li class="nav-item">
-          <a href="#try" class="btn btn-light btn-try ms-lg-2">Try it</a>
+          <a href="#try" class="btn btn-light btn-try ms-lg-2 scroll-link">Try it</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- MAIN CONTENT -->
+<!-- Hero Section -->
+<div class="bacground" style="background: rgb(242,251,248);
+    background: linear-gradient(90deg, rgba(242,251,248,1) 6%, rgba(242,251,248,1) 25%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(242,251,248,1) 75%, rgba(242,251,248,1) 94%);">
+  <section class="col-9 mx-auto" >            
+      <div class="row align-items-center mx-auto align-items-center">
+          <div class="col-lg-7 col-md-7 col-xl-7 order-2 order-md-1">
+              <div class="hero-content-wrapper">
+                  <div data-animate="slideInUp" class="hero-content text-left text-md-left">
+                      <p class="title-hero-section text-wrap">Hello, my name is Tasmia Tasmin</p>
+                      <p class="sub-title-hero-section text-wrap">Driven to solve complex problems with secure, scalable, and innovative solutions.</p>
+
+                      <p class="sub-title-text">
+                          My approach focuses on developing robust systems that empower ideas and transform challenges into groundbreaking opportunities.
+                      </p>
+                      <div data-animate="slideInUp" class="btn-list">
+                          <button class="btn resume-button" [routerLink]="['/course-list-view']">
+                              <a style="color: #20816f; font-weight: 500;">
+                                  <i class="fa fa-eye fa-fw fa-1x" style="color: #20816f;"></i>
+                                  Resume
+                              </a>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div data-animate="slideInUp" class="col-lg-5 col-md-5 col-xl-5 order-1 order-md-2">
+              <img src="img/hero/hero.png" alt="Registered Users Icon" class="img-fluid">
+              <!-- <img src="img/hero/hero2.png" alt="Registered Users Icon" class="img-fluid"> -->
+          </div>
+      </div>
+  </section> 
+</div>
+
+<!-- MAIN CONTENT AREA (will be replaced when clicking ABOUT) -->
 <div id="main-content" class="container">
   <section id="services">
     <h2>Services</h2>
@@ -80,27 +119,98 @@
     <h2>Contact</h2>
     <p>Contact information goes here...</p>
   </section>
+
+  <section id="try">
+    <h2>Try It</h2>
+    <p>CTA or demo area.</p>
+  </section>
 </div>
+
+<!-- ABOUT CONTENT (embedded, no fetch needed) -->
+<template id="about-template">
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Tasmia Tasmin, a Software Engineer specializing in .NET and Angular.
+      I build modern, scalable, and user-friendly applications.
+    </p>
+    <ul>
+      <li>.NET / .NET Core, C#, Web API</li>
+      <li>Angular, TypeScript</li>
+      <li>MSSQL, PostgreSQL</li>
+    </ul>
+  </section>
+</template>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  document.getElementById("about-link").addEventListener("click", function (e) {
+  // --- Sticky navbar padding adjustment (handles varying navbar heights) ---
+  function adjustBodyOffset() {
+    const nav = document.querySelector('.navbar');
+    if (!nav) return;
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+  }
+  window.addEventListener('load', adjustBodyOffset);
+  window.addEventListener('resize', adjustBodyOffset);
+
+  const main = document.getElementById('main-content');
+  const initialHTML = main.innerHTML;
+  let showingAbout = false;
+
+  function setActive(linkIdOrEl) {
+    const links = document.querySelectorAll('.navbar .nav-link');
+    links.forEach(l => l.classList.remove('active'));
+    const el = typeof linkIdOrEl === 'string' ? document.getElementById(linkIdOrEl) : linkIdOrEl;
+    if (el) el.classList.add('active');
+  }
+
+  function collapseNav() {
+    const navCollapse = document.getElementById('navbarNav');
+    const inst = bootstrap.Collapse.getInstance(navCollapse) || new bootstrap.Collapse(navCollapse, { toggle: false });
+    inst.hide();
+  }
+
+  function loadAbout() {
+    const tpl = document.getElementById('about-template');
+    if (!tpl) return;
+    main.innerHTML = tpl.innerHTML; // swap content
+    showingAbout = true;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function restoreMain(callback) {
+    if (!showingAbout) { callback && callback(); return; }
+    main.innerHTML = initialHTML;
+    showingAbout = false;
+    // wait a tick so sections exist before scrolling
+    requestAnimationFrame(() => callback && callback());
+  }
+
+  // ABOUT: swap in dynamic content
+  document.getElementById('about-link').addEventListener('click', function (e) {
     e.preventDefault();
-    fetch("about.html")
-      .then(response => {
-        if (!response.ok) throw new Error("Network error");
-        return response.text();
-      })
-      .then(data => {
-        document.getElementById("main-content").innerHTML = data;
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      })
-      .catch(err => {
-        document.getElementById("main-content").innerHTML = "<p>Error loading About section.</p>";
-        console.error(err);
+    loadAbout();
+    setActive('about-link');
+    collapseNav();
+  });
+
+  // Other links: restore original sections (if About is showing), then scroll
+  document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const target = this.getAttribute('href'); // e.g. "#services"
+      if (!target || !target.startsWith('#')) return; // ignore non-anchor links
+      e.preventDefault();
+      restoreMain(() => {
+        // give DOM a moment to restore
+        requestAnimationFrame(() => {
+          const el = document.querySelector(target);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+          setActive(this);
+          collapseNav();
+        });
       });
+    });
   });
 </script>
-
 </body>
 </html>

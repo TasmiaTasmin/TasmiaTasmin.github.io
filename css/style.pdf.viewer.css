@@ -1,0 +1,67 @@
+
+  /* PDF Toolbar inside modal */
+  .pdf-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    background: #fff;
+  }
+  .pdf-title {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  .pdf-actions a {
+    text-decoration: none;
+  }
+  .pdf-wrapper {
+    background: #f8f9fa;
+  }
+  .pdf-frame {
+    width: 100%;
+    height: 70vh;
+    border: none;
+    display: block;
+  }
+  .pdf-fallback {
+    padding: 1rem;
+    background: #fff;
+  }
+  
+  /* Make modal wider */
+  .modal-dialog.modal-xxl {
+    max-width: 65%; /* almost full screen */
+  }
+
+  /* Bigger close button */
+  /* .big-close {
+    transform: scale(1.5);
+    padding: 0.75rem;
+  } */
+
+  .modal-header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: start;
+      align-items: center;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 8px !important; 
+      border-bottom: 1px solid #e9ecef;
+      border-top-left-radius: .3rem;
+      border-top-right-radius: .3rem;
+  }
+
+  .big-close {
+    width: 1.5rem;  /* Bigger width */
+    height: 1.5rem; /* Bigger height */
+    background-size: 1.5rem; /* Keep icon crisp */
+    padding: 0.5rem;
+  }
+  .big-close:focus {
+    box-shadow: none;
+  }
