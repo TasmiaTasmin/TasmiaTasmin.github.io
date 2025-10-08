@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #10b981, #059669);
+        }
+
+        .timeline-section {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .year-marker {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .year-dot {
+            width: 16px;
+            height: 16px;
+            background-color: #10b981;
+            border-radius: 50%;
+            margin-right: 16px;
+            flex-shrink: 0;
+            box-shadow: 0 0 0 4px #f5f5f5, 0 0 0 8px #d1fae5;
+        }
+
+        .year {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .timeline-items {
+            margin-left: 44px;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -32px;
+            top: 28px;
+            width: 12px;
+            height: 12px;
+            background-color: #d1fae5;
+            border: 2px solid #10b981;
+            border-radius: 50%;
+        }
+
+        .timeline-item p {
+            color: #374151;
+            font-size: 15px;
+        }
+
+        .timeline-item p strong {
+            color: #111827;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+
+            .timeline::before {
+                left: 12px;
+            }
+
+            .year-dot {
+                width: 14px;
+                height: 14px;
+                margin-right: 8px;
+            }
+
+            .year {
+                font-size: 24px;
+            }
+
+            .timeline-items {
+                margin-left: 28px;
+            }
+
+            .timeline-item {
+                padding: 16px;
+                margin-bottom: 12px;
+            }
+
+            .timeline-item::before {
+                left: -24px;
+                top: 22px;
+                width: 10px;
+                height: 10px;
+            }
+
+            .timeline-item p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 8px;
+            }
+
+            .timeline::before {
+                left: 8px;
+            }
+
+            .year-dot {
+                width: 12px;
+                height: 12px;
+                margin-right: 10px;
+            }
+
+            .year {
+                font-size: 20px;
+            }
+
+            .timeline-items {
+                margin-left: 22px;
+            }
+
+            .timeline-item {
+                padding: 12px;
+            }
+
+            .timeline-item::before {
+                left: -20px;
+                top: 18px;
+                width: 8px;
+                height: 8px;
+            }
+
+            .timeline-item p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <!-- 2025 Section -->
+        <div class="timeline-section">
+            <div class="year-marker">
+                <div class="year-dot"></div>
+                <h2 class="year">2025</h2>
+            </div>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <p><strong>[January - Present]</strong> - Exploring cloud native space with a focus on Kubernetes, Linkerd, Prometheus, Grafana, and CNCF projects at Pathao Ltd.</p>
+                </div>
+                <div class="timeline-item">
+                    <p><strong>[January - Present]</strong> - Working as a Site Reliability Engineer at Pathao Ltd. (like UBER in Bangladesh).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2024 Section -->
+        <div class="timeline-section">
+            <div class="year-marker">
+                <div class="year-dot"></div>
+                <h2 class="year">2024</h2>
+            </div>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <p><strong>[July - September]</strong> - Acting as a DevOps consultant for a USA based startup. [Part Time]</p>
+                </div>
+                <div class="timeline-item">
+                    <p><strong>[June-August]</strong> - Setup bastion servers (EC2's), Cloudwatch Alarms, RDS, VPC with private-public subnets in AWS using IaC tool (Terraform).</p>
+                </div>
+                <div class="timeline-item">
+                    <p><strong>[March - December]</strong> - Setup a full fledge ECS cluster for Production, Staging & Development environment using Docker in AWS.</p>
+                </div>
+                <div class="timeline-item">
+                    <p><strong>[January - Present]</strong> - Mentoring a small group of learners who are enthusiastic about software development.</p>
+                </div>
+                <div class="timeline-item">
+                    <p><strong>[January - Present]</strong> - Co-leading a team of 5 engineers and acted as a bridge between business, product and engineering team.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

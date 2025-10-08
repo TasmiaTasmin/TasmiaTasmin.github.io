@@ -3,3 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.h-10{
+    height:50px;
+    width: 50px;
+}
