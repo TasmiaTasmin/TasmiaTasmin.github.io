@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/style.service.css">
         <link rel="stylesheet" href="css/style.button.css">
         <link rel="stylesheet" href="css/style.navtab.css">
+        <link rel="stylesheet" href="css/style.navbar.css">
         <link rel="stylesheet" href="css/style.custom.css">
         <link rel="stylesheet" href="css/style.hero.css">
         <link rel="stylesheet" href="css/style.count.css">
@@ -35,37 +36,37 @@
 
     <body> 
         <!-- Top Navbar -->
-        <section class="col-9 mx-auto">
-            <header class="header">
-                <nav class="navbar navbar-expand-lg fixed-top" style="padding-left: 150px; padding-right: 150px;">
-                    <div class="container">
-                        <a href="" class="navbar-brand scrollTo">TASMIA TASMIN</a>
-    
-                        <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
-                                <span class="fa fa-bars"></span>
-                        </button>
-    
-                        <div id="navbarcollapse" class="collapse navbar-collapse">
-                            <ul class="navbar-nav ml-auto" left padding: 0 >
-                                <li class="nav-item"><a href="./about.html" class="nav-link link-scroll">About</a></li>
-                                <li class="nav-item"><a href="#services" class="nav-link link-scroll">Services</a></li>
-                                
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">RESUME</a>
-                                </li>
-                                <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
-                            </ul>
-                            <button onclick="myFunction()">Try it</button>
-                        </div>
+        
+        <header class="header">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container navbar-content">
+                    <a href="" class="navbar-brand scrollTo">TASMIA TASMIN</a>
+
+                    <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
+                            <span class="fa fa-bars"></span>
+                    </button>
+
+                    <div id="navbarcollapse" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="./about.html" class="nav-link link-scroll">About</a></li>
+                            <li class="nav-item"><a href="#services" class="nav-link link-scroll">Services</a></li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">RESUME</a>
+                            </li>
+                            <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+                        </ul>
+                        <button onclick="myFunction()">Try it</button>
                     </div>
-                </nav>
-            </header>                
-        </section>            
+                </div>
+            </nav>
+        </header>                
+                    
 
         <!-- Hero Section -->
-        <div class="bacground" style="background: rgb(242,251,248);
-            background: linear-gradient(90deg, rgba(242,251,248,1) 6%, rgba(242,251,248,1) 25%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(242,251,248,1) 75%, rgba(242,251,248,1) 94%);">
-            <section class="col-9 mx-auto" >            
+        <div class="bacground" >
+            <!-- <section class="col-9 mx-auto" >             -->
+            <section class="hero-section">
                 <div class="row align-items-center mx-auto align-items-center">
                     <div class="col-lg-7 col-md-7 col-xl-7 order-2 order-md-1">
                         <div class="hero-content-wrapper">
@@ -191,7 +192,7 @@
                         <div class="tab-content" id="myTabContent">
                             <!-- DevOps Tab Content -->
                             <div class="tab-pane fade show active" id="bacbon" role="tabpanel" aria-labelledby="devops-tab">
-                                <h5>Software Engineer</h5>
+                                <h5>Software Engineer @BacBon Limited</h5>
                                 <ul>
                                     <li>Feature and API Implementation and Bug Fixing in both Application layer and Presentation Layer using Angular, ASP.NET Core, .NET Framework.</li>
                                     <li>Databases, Modeling the Entities.</li>
@@ -199,7 +200,7 @@
                                     <li>SaaS LMS Application Integration</li>
                                 </ul>
                                 <br>
-                                <h5>Junior Software Engineer</h5>
+                                <h5>Junior Software Engineer @BacBon Limited</h5>
                                 <ul>
                                     <li>Feature and API Implementation and Bug Fixing in both Application layer and Presentation Layer using Angular, ASP.NET Core, .NET Framework.</li>
                                     <li>Databases, Modeling the Entities.</li>

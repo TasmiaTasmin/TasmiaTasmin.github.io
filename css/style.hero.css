@@ -1,58 +1,178 @@
-  .row{
-    padding: 0;
-  }
-  
-  .bacground {
+/* Hero background */
+.bacground {
+    width: 100%;
     margin: 0;
     padding: 0;
-    
-    width: 100%;
-    /* height: 90vh; */
-   
-    background-image: linear-gradient(rgba(204, 235, 225, 0.25) .1em, transparent .1em), linear-gradient(90deg, rgba(208, 255, 242, 0.25) .1em, transparent .1em);
+    background-color: #f2fbf8;
+    background-image:
+        linear-gradient(rgba(204, 235, 225, 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(208, 255, 242, 0.25) 1px, transparent 1px);
     background-size: 30px 30px;
-  }
-  
-  @media (max-width: 767px) {
-    .hero-content h1,
-    h2 {
-      text-align: center;
-    }
-    .btn-list {
-      justify-content: center;
-    }
-  }
-  
-  .hero-image-style-2 svg {
-    width: 100%;
-  }
+}
 
-  .hero-content h1 {
-    font-size: 58px;
-    margin-bottom: 5px;
-  }
-  
-  .hero-content h1 {
-    line-height: 56px;
-  }
-  
-  .hero-content p {
-    margin-bottom: 30px;
+/* Hero container */
+.bacground > section {
+    width: 75%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 70px 0 32px;
+}
+
+/* Hero layout */
+.bacground > section > .row {
+    align-items: center;
+}
+
+.hero-content-wrapper {
     width: 100%;
-  }
-  
-  .hero-content h2 {
-    font-size: 42px;
-    line-height: 48px;
-  }
-  
-  .hero-content p {
-    margin-bottom: 25px;
+    padding: 8px 0;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content p {
     width: 100%;
-  }
-  
-  .hero-content-wrapper {
-    padding-top: 5px;
-    position: relative;
-  }
-  
+    margin-top: 0;
+}
+
+/* Hero title */
+.title-hero-section {
+    margin-bottom: 18px !important;
+    font-family: "Roboto Slab", serif;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #0a2925;
+}
+
+/* Hero subtitle */
+.sub-title-hero-section {
+    margin-bottom: 18px !important;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 500;
+    line-height: 1.35;
+    color: #20816f;
+}
+
+/* Hero description */
+.sub-title-text {
+    margin-bottom: 28px !important;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #1c534a;
+}
+
+/* Hero image */
+.bacground > section img {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Hero button area */
+.btn-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Prevent the button from shrinking on small screens */
+.btn-list .resume-button {
+    flex: 0 0 auto;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    .bacground > section {
+        padding: 80px 24px 48px;
+    }
+
+    .hero-content {
+        max-width: 560px;
+    }
+
+    .bacground > section img {
+        max-width: 420px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .bacground > section {
+        width: 100%;
+        padding: 48px 20px 32px;
+    }
+
+    .bacground > section > .row {
+        min-height: auto;
+    }
+
+    .hero-content-wrapper {
+        padding: 8px 0 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .title-hero-section {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .sub-title-hero-section {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .sub-title-text {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .bacground > section img {
+        max-width: 320px;
+        margin-bottom: 24px;
+    }
+
+    .btn-list {
+        justify-content: center;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+    .bacground > section {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .title-hero-section {
+        font-size: 1.75rem;
+    }
+
+    .sub-title-hero-section {
+        font-size: 1.125rem;
+    }
+
+    .bacground > section img {
+        max-width: 280px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .bacground *,
+    .bacground *::before,
+    .bacground *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

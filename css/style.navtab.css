@@ -1,52 +1,43 @@
-.nav-icon {
-    background-color: #c5dce7;
-    border: 1px solid #dadce0;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    width: 35px;
-    margin-right: 12px;
-    flex-shrink: 0;
-    vertical-align: middle;
-}
-
-/* Technical Skill Start*/
+/* Work experience and technical skill tabs */
 .nav-tabs {
-    flex-direction: column !important;
-}
-
-/* Equal width for all buttons */
-.nav-tabs .nav-item {
-    flex-grow: 1;
-    text-align: center;
-}
-
-/* Set a consistent width */
-.nav-tabs .nav-link {
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    transition: all 0.3s ease; /* Smooth transition */
-}
-
-/* Same styling on hover and active */
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link.active {
-    background-color: #d3f4ea; 
-    color: #0a2925; 
-    /* border: none; */
-    /* border-color: #dee2e6 #dee2e6 #fff;  */
-}
-
-.nav-tabs {
-    border-bottom: none;
+    flex-direction: column;
+    border: 0;
     border-left: 1px solid #72d6bd;
 }
 
-.navbar-toggler-icon{
+.nav-tabs .nav-item {
+    text-align: center;
+}
+
+.nav-tabs .nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+    background-color: #d3f4ea;
     color: #0a2925;
 }
-/* Technical Skill End*/
+
+@media (max-width: 767.98px) {
+    .nav-tabs {
+        border-left: 0;
+        border-bottom: 1px solid #72d6bd;
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .nav-tabs .nav-item {
+        flex: 0 0 auto;
+    }
+
+    .nav-tabs .nav-link {
+        white-space: nowrap;
+        padding: 8px 12px;
+    }
+}
