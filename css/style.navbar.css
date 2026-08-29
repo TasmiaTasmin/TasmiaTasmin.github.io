@@ -9,11 +9,18 @@
     right: 0;
     left: 0;
     width: 100%;
-    max-height: 60px;
+    max-height: 65px;
     padding: 0;
     background-color: #ffffff;
     border-bottom: 1px solid #e6e6e6;
     z-index: 1030;
+}
+
+nav.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .navbar > .container {
@@ -25,7 +32,19 @@
 }
 
 .navbar-brand {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: 0rem;
     white-space: nowrap;
+}
+
+nav.navbar .navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
 }
 
 .navbar-nav {
@@ -34,6 +53,30 @@
 
 .navbar-toggler {
     flex-shrink: 0;
+}
+
+nav.navbar a.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 5px;
+  color: #777;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 4px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 0.875rem;
+}
+
+nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
+  color: #333;
+  border-top-color: #4fbfa8;
+}
+
+@media (max-width: 1199.98px) {
+  nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
+    color: #4fbfa8;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -57,6 +100,17 @@
 
     .navbar-nav .nav-link {
         padding: 10px 0;
+    }
+
+    nav.navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    nav.navbar a.nav-link {
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        border: none;
     }
 }
 

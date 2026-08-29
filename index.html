@@ -38,7 +38,10 @@
         <!-- Top Navbar -->
         
         <header class="header">
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <!-- Navbar placeholder -->
+            <div id="navbar-placeholder"></div>
+
+            <!-- <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container navbar-content">
                     <a href="" class="navbar-brand scrollTo">TASMIA TASMIN</a>
 
@@ -56,10 +59,16 @@
                             </li>
                             <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
                         </ul>
-                        <button onclick="myFunction()">Try it</button>
+                        
+                        <button class="btn resume-button" onclick="myFunction()">
+                            <a style="color: #20816f; font-weight: 500;">
+                                <i class="fa fa-eye fa-fw fa-1x" style="color: #20816f;"></i>
+                                Try it
+                            </a>
+                        </button>
                     </div>
                 </div>
-            </nav>
+            </nav> -->
         </header>                
                     
 
@@ -375,16 +384,13 @@
                     <h2 class="title-middle">About me</h2>
                 </header>
                 <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
                         <p> I am Tasmia Tasmin. I had completed my Higher Secondary from Motijheel Ideal College at age of 17 in 2013. After that I had started my journey as a Computer Science and Engineering student at East West Univrsity.</p>
+                        <br>
                         <p>While graduating from East West University in CSE, I had focused on built my professional career as an software developer. So, at that time I had started learning Web Aplication Development and Android App Development. I am also interested in the field of machine learning and IOT(internet of things).</p>
                     </div>
-                    <div class="col-lg-6">
-
-                        <!-- <div><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="rounded" src="images/about.jpg" ></div> -->
-
+                    <div class="col-lg-5">
                         <div><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="rounded" src="images/about.png" ></div>
-
                     </div>
                 </div> 
                 
@@ -1212,6 +1218,13 @@
                     x.style.display = "none";
                 }
             }
+        
+            fetch('navbar.html')
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                }
+            );
         </script>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -9,6 +9,13 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 80%;
+    max-height: 80%;
+    vertical-align: middle;
+}
+
+
 #about body {
     --color: rgba(30, 30, 30);
     --bgColor: rgba(245, 245, 245);
