@@ -15,7 +15,7 @@
     width: 75%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 50px 0 32px;
+    padding: 90px 0 32px;
 }
 
 /* Hero layout */
@@ -69,7 +69,7 @@
 .bacground > section img {
     display: block;
     width: 100%;
-    max-width: 520px;
+    max-width: 420px;
     height: auto;
     margin: 0 auto;
 }
@@ -90,7 +90,7 @@
 /* Tablet */
 @media (max-width: 991.98px) {
     .bacground > section {
-        padding: 80px 24px 48px;
+        padding: 75px 0 48px;
     }
 
     .hero-content {
@@ -102,11 +102,34 @@
     }
 }
 
+/* Mid-range: 768px–919px */
+@media (max-width: 919.98px) and (min-width: 768px) {
+    .bacground > section {
+        padding: 75px 24px 48px;
+    }
+
+    .title-hero-section {
+        font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    }
+
+    .sub-title-hero-section {
+        font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+    }
+
+    .sub-title-text {
+        font-size: 0.9375rem;
+    }
+
+    .bacground > section img {
+        max-width: 280px;
+    }
+}
+
 /* Mobile */
 @media (max-width: 767.98px) {
     .bacground > section {
         width: 100%;
-        padding: 48px 20px 32px;
+        padding: 80px 20px 32px;
     }
 
     .bacground > section > .row {
@@ -139,7 +162,7 @@
 
     .bacground > section img {
         max-width: 320px;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
 
     .btn-list {
