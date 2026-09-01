@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
         <link rel="stylesheet" href="vendor/animate.css/animate.css">
         <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+        <link rel="stylesheet" href="css/style.defaultmod.css">
         <link rel="stylesheet" href="css/style.general.css">
         <link rel="stylesheet" href="css/style.background.css">
         <link rel="stylesheet" href="css/style.badge.css">
@@ -35,40 +36,32 @@
     </head>
 
     <body> 
-        <!-- Top Navbar -->
-        
+        <!-- Top Navbar -->        
         <header class="header">
             <!-- Navbar placeholder -->
-            <div id="navbar-placeholder"></div>
+            <!-- <div id="navbar-placeholder"></div> -->
 
-            <!-- <nav class="navbar navbar-expand-lg fixed-top">
-                <div class="container navbar-content">
-                    <a href="" class="navbar-brand scrollTo">TASMIA TASMIN</a>
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+                <div class="container">
+                    <a href="" class="navbar-brand scrollTo"><span class="brand-text">TASMIA TASMIN</span></a>
 
-                    <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
-                            <span class="fa fa-bars"></span>
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div id="navbarcollapse" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto">
+                    <div id="navbarcollapse" class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
                             <li class="nav-item"><a href="./about.html" class="nav-link link-scroll">About</a></li>
                             <li class="nav-item"><a href="#services" class="nav-link link-scroll">Services</a></li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">RESUME</a>
-                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</a></li>
                             <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
                         </ul>
-                        
-                        <button class="btn resume-button" onclick="myFunction()">
-                            <a style="color: #20816f; font-weight: 500;">
-                                <i class="fa fa-eye fa-fw fa-1x" style="color: #20816f;"></i>
-                                Try it
-                            </a>
-                        </button>
+                        <a class="btn-navbar-cta" onclick="myFunction()" href="javascript:void(0)">
+                            <i class="fa fa-eye"></i> Try it
+                        </a>
                     </div>
                 </div>
-            </nav> -->
+            </nav>
         </header>                           
 
         <!-- Hero Section -->
@@ -337,7 +330,7 @@
                                             <strong>Masters of Science in Engineering</strong>
                                         </p>                                
                                         <p class="text-left">American International University - Bangladesh (AIUB)</p>
-                                        <p class="text-left">Graduation Period : May 2014 - December 2018</p>
+                                        <p class="text-left">Graduation Period : January 2021 - May 2022</p>
                                     </div>
                                 </div>
                                                                
@@ -378,7 +371,7 @@
         </section>
 
         <!-- About-->
-        <section id="about" class="col-9 mx-auto about-section">
+        <!-- <section id="about" class="col-9 mx-auto about-section">
             <div class="container">
                 <header class="text-center">
                     <h2 class="title-middle">About me</h2>
@@ -392,11 +385,9 @@
                     <div class="col-lg-5">
                         <div><img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="rounded" src="images/about.png" ></div>
                     </div>
-                </div> 
+                </div>                 
                 
-                <!-- About Timeline Latest-->
                 <div class="timeline">
-                    <!-- 2025 Section -->
                     <div class="timeline-section">
                         <div class="year-marker">
                             <div class="year-dot"></div>
@@ -412,7 +403,6 @@
                         </div>
                     </div>
 
-                    <!-- 2024 Section -->
                     <div class="timeline-section">
                         <div class="year-marker">
                             <div class="year-dot"></div>
@@ -438,38 +428,31 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Service-->
-        <section id="services" class="services-section">
+        <section id="services" class="col-9 mx-auto services-section">
             <div class="container">
-                <div class="col-9 mx-auto">
-                    <header class="text-center">
-                        <h2 class="title-middle">What I Do</h2>
-                    </header>
-                    <div class="row">
-                        <div class="" >            
-                            <p style="color: black; "> For web applications I use Laravel and Javascript. I have learned Android App Development.</p>                        
-                            <p style="color: black; ">I have learned lots of important aspects of computer science throughout my years in school. I am very fond of complex backend systems that require critical thinking skills and logic.</p>
-                            <p style="color: black; "> I have a passion for learning new things and love the thrill of solving challenging problems.I've worked with a wide variety of programming languages. I have a large interest in programming and I enjoy applying my skills to my personal projects. Whenever I need the most performance possible I obviously go with C++.</p>
-                            <p style="color: black; "> For web applications I use PHP and Javascript. Finally, when I am building working on my hobby projects I fall back on C#, ASP.NET etc.</p>
-                        </div>                        
-                    </div>
-                </div>
+                <header class="text-center">
+                    <h2 class="title-middle">What I Do</h2>
+                </header>
+                <div class="col-12" >            
+                    <p style="color: black; "> For web applications I use Laravel and Javascript. I have learned Android App Development.</p>                        
+                    <p style="color: black; ">I have learned lots of important aspects of computer science throughout my years in school. I am very fond of complex backend systems that require critical thinking skills and logic.</p>
+                    <p style="color: black; "> I have a passion for learning new things and love the thrill of solving challenging problems.I've worked with a wide variety of programming languages. I have a large interest in programming and I enjoy applying my skills to my personal projects. Whenever I need the most performance possible I obviously go with C++.</p>
+                    <p style="color: black; "> For web applications I use PHP and Javascript. Finally, when I am building working on my hobby projects I fall back on C#, ASP.NET etc.</p>
+                </div>                    
                 <br>                
-                
-                <div style="
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                ">
+            </div>
+        </section>
+
+        <section id="services1" class="services-section">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <h3 style="padding: 10px">Languages & Technologies</h3>
-                    <br>
                     <div class="skills-section">
-                        <div class="row text-start">
+                        <div class="row text-start mb-4">
                             <!-- Development -->
-                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="category-title"><i class="bi bi-laptop"></i> Development Technologies</div>                                    
                                 <div class="d-flex flex-wrap justify-content-center">                                        
                                     <!-- <div class="skill-card text-sm font-medium">HTML</div>
@@ -495,11 +478,11 @@
                                 </div>
                             </div>
 
-                        <!-- Technologies: OOP, Entity Framework Core, ASP.NET Core, .NET Framework, LINQ, Angular, Node.js, 
-                        Express.js, Nest.js, Bootstrap, SignalR, Hangfire, Firebase, IIS Server -->
+                            <!-- Technologies: OOP, Entity Framework Core, ASP.NET Core, .NET Framework, LINQ, Angular, Node.js, 
+                            Express.js, Nest.js, Bootstrap, SignalR, Hangfire, Firebase, IIS Server -->
 
                             <!-- Programming -->
-                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="category-title"><i class="bi bi-code-slash"></i> Programming</div>
                                 <div class="d-flex flex-wrap justify-content-center">
                                     <div class="skill-card text-sm font-medium">C#</div>
@@ -513,7 +496,7 @@
                             </div>
 
                             <!-- Database -->
-                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="category-title"><i class="bi bi-database"></i> Database</div>
                                 <div class="d-flex flex-wrap justify-content-center">
                                     <div class="skill-card text-sm font-medium">MySQL</div>
@@ -523,7 +506,7 @@
                             </div>
 
                             <!-- Tools & Platforms -->
-                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="col-12 col-md-6 col-lg-3">
                                 <div class="category-title"><i class="bi bi-tools"></i> Tools & Platforms</div>
                                 <div class="d-flex flex-wrap justify-content-center">
                                     <div class="skill-card text-sm font-medium">Linux</div>
@@ -535,36 +518,37 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
-
-                    <br><br>
+                </div>
+        </section>
+        
+        <section id="services2" class="services-section">
+            <div class="row services text-center justify-content-center">
+                <div class="col-lg-3">
+                    <div class="icon">
+                        <i class="fa fa-database"></i>
+                    </div>
+                    <h3 class="heading mb-3 text-400"> Database Design</h3>
                 </div>
 
-                <div class="row services text-center">
-                    <div class="col-lg-4">
-                        <div class="icon">
-                            <i class="fa fa-database"></i>
-                        </div>
-                        <h3 class="heading mb-3 text-400"> Database Design</h3>
+                <div class="col-lg-3">
+                    <div class="icon">
+                        <i class="fa fa-html5"></i>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="icon">
-                            <i class="fa fa-html5"></i>
-                        </div>
-                        <h3 class="heading mb-3 text-400">Web Development</h3>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="icon">
-                            <i class="fa fa-cubes"></i>
-                        </div>
-                        <h3 class="heading mb-3 text-400">Data Analysis</h3>
-                    </div>
+                    <h3 class="heading mb-3 text-400">Web Development</h3>
                 </div>
-                <hr>
 
-                <div class="text-center">
+                <div class="col-lg-3">
+                    <div class="icon">
+                        <i class="fa fa-cubes"></i>
+                    </div>
+                    <h3 class="heading mb-3 text-400">Data Analysis</h3>
+                </div>
+            </div>
+            <hr>
+        </section>
+        
+        <section id="services3" class="services-section">
+            <div class="text-center">
                     <p class="lead">Would you like to know more?</p>
                     <button class="btn resume-button" [routerLink]="['/course-list-view']">
                         <a style="color: #20816f; font-weight: 500;">
@@ -573,7 +557,6 @@
                         </a>
                     </button>
                 </div>
-            </div>
         </section>
 
         <hr>
@@ -866,6 +849,7 @@
         <section id="references">
             <div class="container">
                 <div class="col-sm-12">
+                    <h2 class="title">Not Animation My work</h2>
                     <div class="mb-5 text-center">
                         <h2 class="title-middle">Projects</h2>
                         <p class="lead">I have picked only the latest and interesting some.</p>
@@ -896,7 +880,7 @@
                     <!--  Reference detail  -->
                     <div id="references-masonry">
                         <div class="row">
-                            <div class=" col-lg-3 col-md-6 p-2" >
+                            <!-- <div class=" col-lg-3 col-md-6 p-2" >
                                 <div style="border: 1px solid #2ca089;">
                                     <div class="card text-center w-25" >
                                         <div class="card-body">
@@ -934,7 +918,6 @@
                                         </div>
             
                                         <div class="card-footer">
-                                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                             <button class="btn resume-button" [routerLink]="['/course-list-view']">
                                                 <a style="color: #20816f; font-weight: 500;">
                                                     <i class="fa fa-eye fa-fw fa-1x" style="color: #20816f;"></i>
@@ -944,7 +927,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
                                 <div class="reference">
                                     <a href="#"><img src="img/115.png" alt="" class="img-fluid">
@@ -1204,12 +1187,23 @@
         <!-- JavaScript files-->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
+                // Tooltip init
                 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                    return new bootstrap.Tooltip(tooltipTriggerEl);
+                tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el); });
+
+                // Navbar scroll state
+                var nav = document.getElementById('mainNav');
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 40) {
+                        nav.classList.add('scrolled');
+                    } else {
+                        nav.classList.remove('scrolled');
+                    }
                 });
             });
+        </script>
 
+        <script>
             function myFunction() {
                 var x = document.getElementById("about");
                 if (x.style.display === "none") {
@@ -1226,6 +1220,46 @@
                 }
             );
         </script>
+
+         <!-- <script>
+            // Handle click events for navigation links
+            document.getElementById('index-link').addEventListener('click', function (e) {
+                e.preventDefault();
+                loadContent('index'); // Load home content directly
+            });
+
+            document.getElementById('about-link').addEventListener('click', function (e) {
+                e.preventDefault();
+                loadContent('about.html'); // Load about.html dynamically
+            });
+
+            // Function to load content
+            function loadContent(url) {
+                if (url === 'home') {
+                    document.getElementById('content').innerHTML = `
+                    <h1>Welcome to Home Page</h1>
+                    <p>This is the main content of the home page.</p>
+                    `;
+                } else {
+                    fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        document.getElementById('content').innerHTML = data;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching content:', error);
+                        document.getElementById('content').innerHTML = `
+                        <p style="color: red;">Failed to load content. Please try again later.</p>
+                        `;
+                    });
+                }
+            }
+        </script> -->
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="vendor/jquery/jquery.min.js"></script>

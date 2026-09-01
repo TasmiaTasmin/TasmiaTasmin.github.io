@@ -15,6 +15,9 @@ img {
     vertical-align: middle;
 }
 
+/* body {
+    padding-top: 80px;
+} */
 
 #about body {
     --color: rgba(30, 30, 30);

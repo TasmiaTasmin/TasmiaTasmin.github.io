@@ -49,10 +49,6 @@
     border-top-right-radius: 8px;
   }
 
-  .container {
-    max-width: 1280px!important;
-  }
-
   body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
